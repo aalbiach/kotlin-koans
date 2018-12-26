@@ -14,7 +14,7 @@ fun todoTask26_(): Nothing = TODO(
         Alternatively, you can make the class 'DateRange' implement the 'ClosedRange' interface from the standard library.
     """,
     documentation = doc26(),
-        references = *arrayOf({ range: ClosedRange<Int> -> })
+    references = { range: ClosedRange<Int> -> }
 )
 
 fun checkInRange(date: MyDate, first: MyDate, last: MyDate): Boolean {

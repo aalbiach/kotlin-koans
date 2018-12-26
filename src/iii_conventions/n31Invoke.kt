@@ -11,7 +11,7 @@ fun todoTask31(): Nothing = TODO(
         Change the class 'Invokable' to count the number of invocations:
         for 'invokable()()()()' it should be 4.
     """,
-        references = *arrayOf({ invokable: Invokable -> }))
+    references = { invokable: Invokable -> })
 
 fun task31(invokable: Invokable): Int {
     todoTask31()

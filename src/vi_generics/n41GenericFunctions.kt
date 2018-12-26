@@ -13,10 +13,10 @@ fun task41(): Nothing = TODO(
         You should write a function that splits the collection into two collections given as arguments.
         The signature of the 'toCollection()' function from the standard library may help you.
     """,
-        references = *arrayOf({ l: List<Int> ->
-            l.partition { it > 0 }
-            l.toCollection(HashSet())
-        })
+    references = { l: List<Int> ->
+        l.partition { it > 0 }
+        l.toCollection(HashSet())
+    }
 )
 
 fun List<String>.partitionWordsAndLines(): Pair<List<String>, List<String>> {

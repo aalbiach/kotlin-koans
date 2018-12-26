@@ -12,7 +12,7 @@ fun todoTask6(): Nothing = TODO(
         The `task6` function should return a list of persons.
     """,
     documentation = doc6(),
-    references = *arrayOf({ JavaCode6.Person("Alice", 29) })
+    references = { JavaCode6.Person("Alice", 29) }
 )
 
 data class Person(val name: String, val age: Int)

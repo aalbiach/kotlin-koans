@@ -6,6 +6,7 @@ import util.doc8
 // 'sealed' modifier restricts the type hierarchy:
 // all the subclasses must be declared in the same file
 sealed class Expr
+
 class Num(val value: Int) : Expr()
 class Sum(val left: Expr, val right: Expr) : Expr()
 
@@ -22,5 +23,5 @@ fun todoTask8(expr: Expr): Nothing = TODO(
         The 'JavaCode8.eval' method provides the similar functionality written in Java.
     """,
     documentation = doc8(),
-    references = *arrayOf({ JavaCode8().eval(expr) }))
+    references = { JavaCode8().eval(expr) })
 

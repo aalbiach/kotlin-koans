@@ -33,6 +33,6 @@ fun todoTask5(): Nothing = TODO(
         Use the 'month' variable.
     """,
     documentation = doc5(),
-    references = *arrayOf({ getPattern(); month }))
+    references = { getPattern(); month })
 
 fun task5(): String = """\d{2}\s$month\s\d{4}"""

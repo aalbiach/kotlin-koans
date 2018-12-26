@@ -12,7 +12,7 @@ fun todoTask3(): Nothing = TODO(
         Uncomment the commented code and make it compile.
     """,
     documentation = doc2(),
-    references = *arrayOf({ name: String -> JavaCode3().foo(name); foo(name) }))
+    references = { name: String -> JavaCode3().foo(name); foo(name) })
 
 fun foo(name: String, number: Int = 42, toUpperCase: Boolean = false): String =
     (if (toUpperCase) name.toUpperCase() else name) + number
