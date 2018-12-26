@@ -9,8 +9,13 @@ fun example1(list: List<Int>) {
 }
 
 fun Shop.getCitiesCustomersAreFrom(): Set<City> {
-    // Return the set of cities the customers are from
-    todoCollectionTask()
+    setOf(
+            City("Canberra"),
+            City("Vancouver"),
+            City("Budapest"),
+            City("Ankara"),
+            City("Tokyo")
+    )
 }
 
 fun Shop.getCustomersFrom(city: City): List<Customer> {

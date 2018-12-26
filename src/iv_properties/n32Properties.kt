@@ -3,7 +3,7 @@ package iv_properties
 import util.TODO
 import util.doc32
 
-class PropertyExample() {
+class PropertyExample {
     var counter = 0
     var propertyWithCounter: Int? = todoTask32()
 }
@@ -15,5 +15,5 @@ fun todoTask32(): Nothing = TODO(
         the 'counter' property is incremented every time 'propertyWithCounter' is assigned to.
     """,
     documentation = doc32(),
-    references = { PropertyExample() }
+        references = *arrayOf({ PropertyExample() })
 )

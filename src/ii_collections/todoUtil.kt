@@ -8,5 +8,5 @@ fun todoCollectionTask(): Nothing = TODO(
            Look through the Shop API, which all the tasks are using.
            Each individual task is described in the function name and the comment.
         """,
-        references = { shop: Shop -> shop.customers }
+        references = *arrayOf({ shop: Shop -> shop.customers })
 )
