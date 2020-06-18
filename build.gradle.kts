@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath(kotlin("gradle-plugin", "1.3.11"))
+        classpath(kotlin("gradle-plugin", "1.3.72"))
     }
 }
 
@@ -19,7 +19,7 @@ val kotlinVersion: String? by extra {
 plugins {
     // application
     // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM
-    kotlin("jvm") version "1.3.11"
+    kotlin("jvm") version "1.3.72"
 }
 
 sourceSets {
@@ -33,6 +33,6 @@ repositories {
 
 dependencies {
     compile(kotlin("stdlib"))
-    compile("com.google.guava:guava:16.0")
-    testCompile("junit:junit:4.12")
+    compile("com.google.guava:guava:28.0-jre")
+    testCompile("org.junit.jupiter:junit-jupiter:5.4.0")
 }
