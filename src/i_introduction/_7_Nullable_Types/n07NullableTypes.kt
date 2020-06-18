@@ -4,7 +4,7 @@ import util.TODO
 import util.doc7
 
 fun test() {
-    val s = "this variable cannot store null references"
+    val s: String = "this variable cannot store null references"
     val q: String? = null
 
     if (q != null) q.length      // you have to check to dereference
@@ -22,7 +22,9 @@ fun todoTask7(client: Client?, message: String?, mailer: Mailer): Nothing = TODO
     references = { JavaCode7().sendMessageToClient(client, message, mailer) }
 )
 
-fun sendMessageToClient(client: Client?, message: String?, mailer: Mailer) {
+fun sendMessageToClient(
+    client: Client?, message: String?, mailer: Mailer
+) {
     if (client == null || message == null) return
 
     val personalInfo = client.personalInfo ?: return
